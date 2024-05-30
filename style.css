@@ -3,3 +3,61 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  gap: 24px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  line-height: 24px;
+  section {
+    display: flex;
+    gap: 16px;
+
+    .search {
+      position: relative;
+
+      input {
+        width: 350px;
+        border-radius: 25px;
+        border: none;
+        padding: 10px 15px;
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        justify-self: center;
+        color: black;
+        transform: translate(-15px, -50%);
+      }
+    }
+
+    .nav-link {
+      position: relative;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+
+      .indicator {
+        position: absolute;
+        padding: 3px;
+        background-color: red;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
