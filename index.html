@@ -13,16 +13,16 @@
   </head>
   <body>
     <header class="flex-center">
-      <section>
+      <div class="header-item">
         <div class="nav-link">
           Home
           <div class="indicator"></div>
         </div>
         <div class="nav-link">Genre</div>
         <div class="nav-link">Country</div>
-      </section>
+      </div>
 
-      <section>
+      <div class="header-item">
         <div class="search">
           <input
             type="text"
@@ -33,18 +33,71 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section>
+      <div class="header-item">
         <div class="nav-link">Movies</div>
         <div class="nav-link">Movies</div>
         <div class="nav-link">Movies</div>
-      </section>
+      </div>
 
-      <section>
+      <div class="header-item">
         <div class="nav-link">Login/Signup</div>
         <div class="nav-link"><i class="fa-regular fa-bell"></i></div>
-      </section>
+      </div>
     </header>
+
+    <div class="container movies-slider">
+      <section class="introduce-movies">
+        <div class="watch-buttons flex-center">
+          <button class="watch flex-center now">
+            <span> Watch now </span>
+            <img src="./assets/watch-now-icon.png" alt="" />
+          </button>
+
+          <button class="watch flex-center">
+            <span> Watch later </span>
+            <img src="./assets/watch-later-icon.png" alt="" />
+          </button>
+        </div>
+
+        <div class="movies-info">
+          <div class="title">Avatar: The Way of Water</div>
+          <div class="movies-items flex-center">
+            <div class="tag item">Action</div>
+            <div class="tag item">Adventure</div>
+            <div class="tag item">Science Fiction</div>
+            <div class="item flex-center">
+              <img src="./assets/calendar.png" alt="" />
+              <span>2022</span>
+            </div>
+            <div class="item flex-center">
+              <img src="./assets/item-clock.png" alt="" />
+              <span>3:12:00</span>
+            </div>
+
+            <div class="item flex-center">
+              <img src="./assets/star-rating.png" alt="" />
+              <span> 8.5 </span>
+            </div>
+          </div>
+          <div class="movies-description">
+            Set more than a decade after the events of the first film, learn the
+            story of the Sully family (Jake, Neytiri, and their kids), the
+            trouble that follows them, the lengths they go to keep each other
+            safe, the battles they fight to stay alive, and the tragedies they
+            endure
+          </div>
+        </div>
+      </section>
+
+      <div class="dots-indicator flex-center">
+        <div class="dot selected"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
   </body>
 </html>
